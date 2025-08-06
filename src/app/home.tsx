@@ -13,35 +13,37 @@ export default function Index() {
     };
     return (
             <View style={style.container}>
-                <Image
-                    source={require('../../assets/images/logo.png')}
-                    style={style.logo}
-                />
-                <View style={style.header}>
-                    <View style={style.searchContainer}>
-                        <TextInput
-                            style={style.searchInput}
-                            placeholder=""
-                            placeholderTextColor="#999"
-                        />
-                        <TouchableOpacity style={style.searchButton}>
-                            <Ionicons name="search-outline" size={22} color="#ec701c" />
+                <View style={style.headerContainer}>
+                    <Image
+                        source={require('../../assets/images/logo.png')}
+                        style={style.logo}
+                    />
+                    <View style={style.header}>
+                        <View style={style.searchContainer}>
+                            <TextInput
+                                style={style.searchInput}
+                                placeholder=""
+                                placeholderTextColor="#999"
+                            />
+                            <TouchableOpacity style={style.searchButton}>
+                                <Ionicons name="search-outline" size={22} color="#ec701c" />
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                    <View style={style.content}>
+                        <TouchableOpacity onPress={ideas} style={style.button}>
+                            <Ionicons name="bulb-outline" size={18} color="#ec701c" style={{marginRight: 5}} />
+                            <Text style={style.buttonText}>Idéias de P.I</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={style.button}>
+                            <Ionicons name="sparkles-outline" size={18} color="#ec701c" style={{marginRight: 5}} />
+                            <Text style={style.buttonText}> Novidades</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={style.button}>
+                            <Ionicons name="chatbubble-ellipses-outline" size={18} color="#ec701c" style={{marginRight: 5}} />
+                            <Text style={style.buttonText}>De sua opinião</Text>
                         </TouchableOpacity>
                     </View>
-                </View>
-                <View style={style.content}>
-                    <TouchableOpacity onPress={ideas} style={style.button}>
-                        <Ionicons name="bulb-outline" size={18} color="#ec701c" style={{marginRight: 5}} />
-                        <Text style={style.buttonText}>Idéias de P.I</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={style.button}>
-                        <Ionicons name="sparkles-outline" size={18} color="#ec701c" style={{marginRight: 5}} />
-                        <Text style={style.buttonText}> Novidades</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={style.button}>
-                        <Ionicons name="chatbubble-ellipses-outline" size={18} color="#ec701c" style={{marginRight: 5}} />
-                        <Text style={style.buttonText}>De sua opinião</Text>
-                    </TouchableOpacity>
                 </View>
                 <View style={style.box}>
                     <View style={style.userTagContainer}>

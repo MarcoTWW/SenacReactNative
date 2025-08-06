@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native"
 const style = StyleSheet.create({
     container: {
         height: '100%',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         padding: 15,
         paddingTop: 30,
         backgroundColor: '#151515',
@@ -11,7 +11,7 @@ const style = StyleSheet.create({
 
     headerContainer: {
         width: "100%",
-        marginBottom: "auto"
+        marginBottom: 30
     },
 
     header: {
@@ -26,6 +26,7 @@ const style = StyleSheet.create({
     },
 
     searchContainer: {
+        height: 40,
         width: 315,
         textAlign: 'center',
         justifyContent: 'center',
@@ -61,7 +62,6 @@ const style = StyleSheet.create({
     },
 
     contentBox: {
-        marginBottom: "auto",
     },
 
     title: {

@@ -5,7 +5,7 @@ const style = StyleSheet.create({
 
     container: {
         height: '100%',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         padding: 15,
         paddingTop: 30,
         backgroundColor: '#151515',
@@ -16,6 +16,10 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: "auto",
+    },
+
+    headerContainer: {
+        width: "100%",
     },
 
     logo: {
@@ -102,10 +106,8 @@ const style = StyleSheet.create({
 
     userTagContainer: {
         flexDirection: 'row',
-        alignItems: 'center',
+        justifyContent: 'space-between',
         marginBottom: 10,
-        gap: 100,
-
     },
 
     tag: {
@@ -122,25 +124,27 @@ const style = StyleSheet.create({
     },
 
     button2: {
-        height: 50,
-        width: 295,
+        height: 40,
+        width: "100%",
+        marginStart: 'auto',
+        marginEnd: 'auto',
         marginBottom: 10,
         justifyContent: 'center',
         color: '#ffffff',
-        backgroundColor: '#',
+        backgroundColor: '#484848',
         borderRadius: 20,
         alignItems: 'center',
     },
 
     buttonText1: {
         height: 30,
-        width: 300,
         paddingTop: 5,
+        marginStart: 'auto',
+        marginEnd: 'auto',
         textAlign: 'center',
         fontWeight: '500',
         justifyContent: 'center',
         color: '#f78b1fbb',
-        backgroundColor: '#484848',
         borderRadius: 20,
         alignItems: 'center',
     }
